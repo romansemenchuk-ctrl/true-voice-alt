@@ -60,7 +60,7 @@ function CosmosField({ accent = '#C8102E', enabled = true, intensity = 1 }) {
       lastScroll = s;
     }
 
-    const idleWarp = reduce ? 0 : 0.022;
+    const idleWarp = reduce ? 0 : 0.006;
     let raf = 0;
 
     function frame() {
