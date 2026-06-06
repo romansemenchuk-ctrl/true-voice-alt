@@ -60,12 +60,12 @@ function CosmosField({ accent = '#C8102E', enabled = true, intensity = 1 }) {
       lastScroll = s;
     }
 
-    const idleWarp = reduce ? 0 : 0.0017;
+    const idleWarp = reduce ? 0 : 0.022;
     let raf = 0;
 
     function frame() {
       ctx.clearRect(0, 0, W, H);
-      vel *= 0.86;
+      vel *= 0.94;
       const warp = idleWarp + Math.min(0.085, vel * 0.0016 * intensity);
 
       for (let i = 0; i < stars.length; i++) {
