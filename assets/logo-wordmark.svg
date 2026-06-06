@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 96" fill="none">
+  
+  <g transform="translate(0 0)">
+    
+    <g fill="#C8102E">
+      <polygon points="48,4 47,20 49,20"></polygon>
+      <polygon points="48,4 47,20 49,20" transform="rotate(45 48 48)"></polygon>
+      <polygon points="48,4 47,20 49,20" transform="rotate(90 48 48)"></polygon>
+      <polygon points="48,4 47,20 49,20" transform="rotate(135 48 48)"></polygon>
+      <polygon points="48,4 47,20 49,20" transform="rotate(180 48 48)"></polygon>
+      <polygon points="48,4 47,20 49,20" transform="rotate(225 48 48)"></polygon>
+      <polygon points="48,4 47,20 49,20" transform="rotate(270 48 48)"></polygon>
+      <polygon points="48,4 47,20 49,20" transform="rotate(315 48 48)"></polygon>
+      <circle cx="48" cy="12" r="0.9" transform="rotate(22.5 48 48)"></circle>
+      <circle cx="48" cy="12" r="0.9" transform="rotate(67.5 48 48)"></circle>
+      <circle cx="48" cy="12" r="0.9" transform="rotate(112.5 48 48)"></circle>
+      <circle cx="48" cy="12" r="0.9" transform="rotate(157.5 48 48)"></circle>
+      <circle cx="48" cy="12" r="0.9" transform="rotate(202.5 48 48)"></circle>
+      <circle cx="48" cy="12" r="0.9" transform="rotate(247.5 48 48)"></circle>
+      <circle cx="48" cy="12" r="0.9" transform="rotate(292.5 48 48)"></circle>
+      <circle cx="48" cy="12" r="0.9" transform="rotate(337.5 48 48)"></circle>
+    </g>
+    <circle cx="42" cy="48" r="18" fill="#C8102E"></circle>
+    <circle cx="54" cy="48" r="18" fill="#0B0B0D"></circle>
+    <circle cx="54" cy="48" r="18" fill="none" stroke="#F5F5F2" stroke-opacity="0.22" stroke-width="0.5"></circle>
+    <line x1="48" y1="0" x2="48" y2="96" stroke="#F5F5F2" stroke-opacity="0.4" stroke-width="0.6"></line>
+  </g>
+  <text x="100" y="50" font-family="Stratos, Manrope, sans-serif" font-size="28" font-weight="600" letter-spacing="0.04em" fill="#F5F5F2">TRUE<tspan fill="#C8102E">·</tspan>VOICE</text>
+  <text x="100" y="74" font-family="Inter, sans-serif" font-size="11" font-weight="500" letter-spacing="0.36em" fill="#7A7A7A">A C A D E M Y</text>
+</svg>

@@ -1,0 +1,23 @@
+/* CSS TEST — typography + spacing tokens (sandbox only) */
+:root {
+  --fs-hero-h1: clamp(1.45rem, 1.15rem + 1.25vw, 1.82rem);
+  --fs-section-title: clamp(1.28rem, 1.1rem + 0.82vw, 1.6rem);
+  --fs-section-subtitle: 14px;
+  --fs-body: 14px;
+  --fs-card-title: 15px;
+  --fs-card-body: 14px;
+  --fs-small: 13px;
+  --fs-caption: 12px;
+  --fs-badge: 10px;
+  --fs-cta: 16px;
+  --lh-tight: 1.22;
+  --lh-body: 1.58;
+  --lh-card: 1.55;
+  --section-pad-x: 24px;
+  --section-pad-top: 44px;
+  --section-pad-bottom: 36px;
+  --card-pad: 18px;
+  --card-gap: 12px;
+  --stack-title-gap: 16px;
+  --stack-subtitle-gap: 24px;
+}

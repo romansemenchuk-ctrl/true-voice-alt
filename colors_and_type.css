@@ -1,0 +1,242 @@
+/* ========================================================================
+   TrueVoice Academy — Design Tokens
+   Somatic voice training. Black ground · one red accent · white as air · gold for sacred.
+   ======================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+/* ── Stratos (display) — local TRIAL fonts in /fonts ──────────────────── */
+@font-face { font-family: 'Stratos'; font-weight: 100; font-style: normal;
+  src: url('fonts/stratosweb-thin-TRIAL.woff') format('woff'); font-display: swap; }
+@font-face { font-family: 'Stratos'; font-weight: 100; font-style: italic;
+  src: url('fonts/stratosweb-thinitalic-TRIAL.woff') format('woff'); font-display: swap; }
+@font-face { font-family: 'Stratos'; font-weight: 200; font-style: normal;
+  src: url('fonts/stratosweb-extralight-TRIAL.woff') format('woff'); font-display: swap; }
+@font-face { font-family: 'Stratos'; font-weight: 200; font-style: italic;
+  src: url('fonts/stratosweb-extralightitalic-TRIAL.woff') format('woff'); font-display: swap; }
+@font-face { font-family: 'Stratos'; font-weight: 300; font-style: normal;
+  src: url('fonts/stratosweb-light-TRIAL.woff') format('woff'); font-display: swap; }
+@font-face { font-family: 'Stratos'; font-weight: 300; font-style: italic;
+  src: url('fonts/stratosweb-lightitalic-TRIAL.woff') format('woff'); font-display: swap; }
+@font-face { font-family: 'Stratos'; font-weight: 400; font-style: normal;
+  src: url('fonts/stratosweb-regular-TRIAL.woff') format('woff'); font-display: swap; }
+@font-face { font-family: 'Stratos'; font-weight: 400; font-style: italic;
+  src: url('fonts/stratosweb-italic-TRIAL.woff') format('woff'); font-display: swap; }
+@font-face { font-family: 'Stratos'; font-weight: 500; font-style: normal;
+  src: url('fonts/stratosweb-medium-TRIAL.woff') format('woff'); font-display: swap; }
+@font-face { font-family: 'Stratos'; font-weight: 500; font-style: italic;
+  src: url('fonts/stratosweb-mediumitalic-TRIAL.woff') format('woff'); font-display: swap; }
+@font-face { font-family: 'Stratos'; font-weight: 600; font-style: normal;
+  src: url('fonts/stratosweb-semibold-TRIAL.woff') format('woff'); font-display: swap; }
+@font-face { font-family: 'Stratos'; font-weight: 600; font-style: italic;
+  src: url('fonts/stratosweb-semibolditalic-TRIAL.woff') format('woff'); font-display: swap; }
+@font-face { font-family: 'Stratos'; font-weight: 700; font-style: normal;
+  src: url('fonts/stratosweb-bold-TRIAL.woff') format('woff'); font-display: swap; }
+@font-face { font-family: 'Stratos'; font-weight: 700; font-style: italic;
+  src: url('fonts/stratosweb-bolditalic-TRIAL.woff') format('woff'); font-display: swap; }
+@font-face { font-family: 'Stratos'; font-weight: 800; font-style: normal;
+  src: url('fonts/stratosweb-extrabold-TRIAL.woff') format('woff'); font-display: swap; }
+@font-face { font-family: 'Stratos'; font-weight: 800; font-style: italic;
+  src: url('fonts/stratosweb-extrabolditalic-TRIAL.woff') format('woff'); font-display: swap; }
+@font-face { font-family: 'Stratos'; font-weight: 900; font-style: normal;
+  src: url('fonts/stratosweb-black-TRIAL.woff') format('woff'); font-display: swap; }
+@font-face { font-family: 'Stratos'; font-weight: 900; font-style: italic;
+  src: url('fonts/stratosweb-blackitalic-TRIAL.woff') format('woff'); font-display: swap; }
+
+:root {
+  /* ── Color · core palette ───────────────────────────────────────────── */
+  --bg:            #0B0B0D;   /* True Black — the ground */
+  --bg-elevated:   #1C1C1F;   /* Graphite — cards, surfaces */
+  --bg-deep:       #08080A;   /* deeper black — footer / pits */
+
+  --fg:            #F5F5F2;   /* Off White — the air, primary text */
+  --fg-muted:      #B4B4B0;   /* readable secondary */
+  --fg-faint:      #7A7A7A;   /* Smoke — captions / metadata */
+  --fg-dim:        #4A4A48;   /* disabled */
+
+  /* ── Color · the single accent ──────────────────────────────────────── */
+  --accent:        #C8102E;   /* Blood Red — one per layout */
+  --accent-hover:  #8E0B20;   /* darker — hover only */
+  --accent-soft:   rgba(200,16,46,0.16);
+  --accent-glow:   rgba(200,16,46,0.40);
+
+  /* ── Color · sacred / ritual only ───────────────────────────────────── */
+  --sacred:        #C9A227;   /* Gold — sacred / ritual context */
+  --tv-gold:       #C9A227;   /* alias used widely */
+  --tv-gold-soft:  rgba(201,162,39,0.22);
+
+  /* ── Lines ──────────────────────────────────────────────────────────── */
+  --border:        rgba(245,245,242,0.08);
+  --border-strong: rgba(245,245,242,0.18);
+  --divider:       rgba(245,245,242,0.06);
+
+  /* ── Type families ──────────────────────────────────────────────────── */
+  --font-display:  'Stratos', 'Inter', -apple-system, system-ui, sans-serif;
+  --font-body:     'Inter', -apple-system, system-ui, sans-serif;
+
+  /* ── Type · semantic sizes ──────────────────────────────────────────── */
+  --t-display:     60px;   /* Display · Stratos 300 — used for hero quotes */
+  --t-h1:          48px;   /* H1 · Stratos 600 */
+  --t-h2:          34px;   /* H2 · Stratos 500 */
+  --t-h3:          24px;   /* H3 · Stratos 500 */
+  --t-h4:          18px;   /* H4 · Stratos 500 — module/section */
+  --t-body:        16px;   /* Body · Inter 400 — never 700 in body */
+  --t-small:       13px;   /* Small · Inter 400 */
+  --t-meta:        11px;   /* Meta · Inter 500 · tracked */
+  --t-overline:    10px;   /* Overline · Inter 500 · 0.18em–0.32em tracking */
+
+  --track-overline: 0.22em;
+  --track-meta:     0.18em;
+
+  /* ── Spacing scale (8-base) ─────────────────────────────────────────── */
+  --space-1:        4px;
+  --space-2:        8px;
+  --space-3:       12px;
+  --space-4:       16px;
+  --space-5:       24px;
+  --space-6:       32px;
+  --space-7:       64px;
+  --space-8:       96px;
+  --space-9:      128px;
+
+  /* ── Layout ─────────────────────────────────────────────────────────── */
+  --safe-zone:    clamp(40px, 9vw, 144px);  /* 8–10% safe-zone on macro layouts */
+
+  /* ── Radii — sharp by default ───────────────────────────────────────── */
+  --r-0:            0px;     /* default */
+  --r-1:            2px;
+  --r-pill:       999px;     /* tags, status chips only */
+
+  /* ── Elevation — contrast, not shadow ───────────────────────────────── */
+  --shadow-1:      0 8px 24px rgba(0,0,0,0.45);
+  --glow-red:      0 0 80px rgba(200,16,46,0.25);
+  --glow-gold:     0 0 60px rgba(201,162,39,0.18);
+
+  /* ── Motion ─────────────────────────────────────────────────────────── */
+  --ease-out:      cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-in:       cubic-bezier(0.7, 0, 0.84, 0);
+  --dur-fast:      180ms;
+  --dur-base:      320ms;
+  --dur-slow:      560ms;
+}
+
+/* ========================================================================
+   BASE
+   ======================================================================== */
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: var(--t-body);
+  line-height: 1.6;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* selection: red on black */
+::selection { background: var(--accent); color: var(--fg); }
+
+/* ========================================================================
+   SEMANTIC TYPE
+   Sentence case. Uppercase only in tracked overlines.
+   Body never uses 700.
+   ======================================================================== */
+
+.t-display {
+  font-family: var(--font-display);
+  font-weight: 300;
+  font-size: var(--t-display);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  color: var(--fg);
+  text-wrap: balance;
+}
+
+.t-h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: var(--t-h1);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  color: var(--fg);
+  text-wrap: balance;
+}
+
+.t-h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--t-h2);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  color: var(--fg);
+  text-wrap: balance;
+}
+
+.t-h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--t-h3);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--fg);
+}
+
+.t-h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--t-h4);
+  line-height: 1.3;
+  color: var(--fg);
+}
+
+.t-body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--t-body);
+  line-height: 1.6;
+  color: var(--fg);
+}
+
+.t-small {
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: var(--t-small);
+  line-height: 1.55;
+  color: var(--fg-muted);
+}
+
+.t-meta {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: var(--t-meta);
+  letter-spacing: var(--track-meta);
+  color: var(--fg-muted);
+}
+
+.t-overline {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: var(--t-overline);
+  letter-spacing: var(--track-overline);
+  text-transform: uppercase;
+  color: var(--fg-muted);
+}
+
+.t-overline--accent { color: var(--accent); }
+.t-overline--gold   { color: var(--tv-gold); }
+
+.t-italic {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 300;
+}
+
+/* utility tints */
+.tx-accent { color: var(--accent); }
+.tx-muted  { color: var(--fg-muted); }
+.tx-faint  { color: var(--fg-faint); }
+.tx-gold   { color: var(--tv-gold); }

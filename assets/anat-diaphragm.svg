@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 800" fill="none" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <radialGradient id="diaBg" cx="50%" cy="42%" r="62%">
+      <stop offset="0%" stop-color="#1A0E0A" stop-opacity="0.7"></stop>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"></stop>
+    </radialGradient>
+    <radialGradient id="diaHalo" cx="50%" cy="40%" r="46%">
+      <stop offset="0%" stop-color="#FFE9A8" stop-opacity="0.18"></stop>
+      <stop offset="55%" stop-color="#C9A227" stop-opacity="0.06"></stop>
+      <stop offset="100%" stop-color="#C8102E" stop-opacity="0"></stop>
+    </radialGradient>
+    <radialGradient id="diaVig" cx="50%" cy="50%" r="68%">
+      <stop offset="55%" stop-color="#000000" stop-opacity="0"></stop>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.6"></stop>
+    </radialGradient>
+  </defs>
+
+  <rect width="600" height="800" fill="url(#diaBg)"></rect>
+  <circle cx="300" cy="340" r="240" fill="url(#diaHalo)"></circle>
+
+  <g stroke="#FFE9A8" fill="none" stroke-linecap="round" stroke-linejoin="round">
+
+    
+    
+    <path d="M 60 432&#xA;             Q 100 280 220 224&#xA;             Q 280 210 310 224&#xA;             Q 340 210 380 224&#xA;             Q 500 280 540 432" stroke-opacity="0.92" stroke-width="1.4"></path>
+
+    
+    <path d="M 60 432&#xA;             Q 130 472 220 472&#xA;             Q 280 472 310 462&#xA;             Q 340 472 380 472&#xA;             Q 470 472 540 432" stroke-opacity="0.78" stroke-width="1.1"></path>
+
+    
+    <g stroke-opacity="0.92" stroke-width="1.2">
+      <path d="M 240 296&#xA;               Q 232 282 250 270&#xA;               Q 274 258 300 264&#xA;               Q 326 258 350 270&#xA;               Q 368 282 360 296&#xA;               Q 372 312 358 322&#xA;               Q 332 336 300 332&#xA;               Q 268 336 242 322&#xA;               Q 228 312 240 296 Z"></path>
+    </g>
+    
+    <ellipse cx="324" cy="294" rx="10" ry="7" stroke-opacity="0.7" stroke-width="0.85"></ellipse>
+    
+    <ellipse cx="286" cy="304" rx="9" ry="6" stroke-opacity="0.7" stroke-width="0.85"></ellipse>
+
+    
+    <ellipse cx="304" cy="318" rx="6" ry="4" stroke-opacity="0.55" stroke-width="0.7"></ellipse>
+
+    
+    <g stroke-opacity="0.5" stroke-width="0.55">
+      
+      <path d="M 244 286 Q 200 286 150 308"></path>
+      <path d="M 240 304 Q 188 314 130 340"></path>
+      <path d="M 244 320 Q 196 338 134 372"></path>
+      <path d="M 254 332 Q 210 362 154 400"></path>
+      <path d="M 274 336 Q 232 376 188 416"></path>
+      <path d="M 296 334 Q 280 380 240 456"></path>
+      
+      <path d="M 356 286 Q 400 286 450 308"></path>
+      <path d="M 360 304 Q 412 314 470 340"></path>
+      <path d="M 356 320 Q 404 338 466 372"></path>
+      <path d="M 346 332 Q 390 362 446 400"></path>
+      <path d="M 326 336 Q 368 376 412 416"></path>
+      <path d="M 304 334 Q 320 380 360 456"></path>
+    </g>
+    
+    <g stroke-opacity="0.3" stroke-width="0.4">
+      <path d="M 242 296 Q 192 304 138 326"></path>
+      <path d="M 246 312 Q 198 326 144 354"></path>
+      <path d="M 250 326 Q 202 350 148 386"></path>
+      <path d="M 358 296 Q 408 304 462 326"></path>
+      <path d="M 354 312 Q 402 326 456 354"></path>
+      <path d="M 350 326 Q 398 350 452 386"></path>
+    </g>
+
+    
+    <g stroke-opacity="0.55" stroke-width="0.9">
+      <path d="M 60 420 Q 80 412 100 418"></path>
+      <path d="M 56 442 Q 76 434 96 440"></path>
+      <path d="M 60 462 Q 80 456 100 462"></path>
+      <path d="M 540 420 Q 520 412 500 418"></path>
+      <path d="M 544 442 Q 524 434 504 440"></path>
+      <path d="M 540 462 Q 520 456 500 462"></path>
+    </g>
+
+    
+    <g stroke-opacity="0.7" stroke-width="1.05">
+      <path d="M 282 332 Q 278 412 272 504"></path>
+      <path d="M 318 332 Q 322 412 328 504"></path>
+    </g>
+    <g stroke-opacity="0.35" stroke-width="0.55">
+      <path d="M 272 504 Q 256 558 240 600"></path>
+      <path d="M 328 504 Q 344 558 360 600"></path>
+    </g>
+
+  </g>
+
+  
+  <g stroke="#C9A227" fill="none" stroke-width="0.95" stroke-linecap="round" stroke-opacity="0.65">
+    <path d="M 150 532 L 150 596"></path>
+    <path d="M 144 588 L 150 600 L 156 588"></path>
+    <path d="M 220 552 L 220 624"></path>
+    <path d="M 214 616 L 220 628 L 226 616"></path>
+    <path d="M 300 564 L 300 640"></path>
+    <path d="M 294 632 L 300 644 L 306 632"></path>
+    <path d="M 380 552 L 380 624"></path>
+    <path d="M 374 616 L 380 628 L 386 616"></path>
+    <path d="M 450 532 L 450 596"></path>
+    <path d="M 444 588 L 450 600 L 456 588"></path>
+  </g>
+
+  
+  <circle cx="300" cy="298" r="3" fill="#C9A227" opacity="0.9"></circle>
+  <circle cx="300" cy="298" r="1.3" fill="#C8102E"></circle>
+
+  <rect width="600" height="800" fill="url(#diaVig)" pointer-events="none"></rect>
+</svg>
