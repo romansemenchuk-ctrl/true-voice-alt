@@ -60,13 +60,21 @@ function CosmosField({ accent = '#C8102E', enabled = true, intensity = 1 }) {
       lastScroll = s;
     }
 
-    const idleWarp = reduce ? 0 : 0.006;
     let raf = 0;
 
-    function frame() {
+    function frame(ts) {
+      const t = (ts || performance.now()) * 0.001;
       ctx.clearRect(0, 0, W, H);
       vel *= 0.94;
-      const warp = idleWarp + Math.min(0.085, vel * 0.0016 * intensity);
+
+      // Heartbeat pulse — lub-dub at ~68 BPM
+      const ph = (t * (68 / 60)) % 1;
+      const lub = Math.exp(-Math.pow((ph - 0.08) * 16, 2));
+      const dub = Math.exp(-Math.pow((ph - 0.24) * 20, 2)) * 0.55;
+      const pulse = reduce ? 0 : (lub + dub);
+
+      const scrollBoost = Math.min(0.08, vel * 0.0016 * intensity);
+      const warp = 0.003 + pulse * (0.018 + scrollBoost * 0.5) + scrollBoost * 0.5;
 
       for (let i = 0; i < stars.length; i++) {
         const st = stars[i];
